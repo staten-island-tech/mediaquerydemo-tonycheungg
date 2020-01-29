@@ -11,7 +11,7 @@ html {
   } */
 }
 body {
-  background-color: color(black);
+  background-color: color(grey);
 }
 .header {
   position: relative;
@@ -27,8 +27,8 @@ body {
   background-position: top;
   background-size: cover;
 
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 8vh, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0% 100%);
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 
   .text-box {
     position: absolute;
@@ -89,3 +89,6 @@ body {
     transform: translateX(0);
   }
 }
+
+
+
