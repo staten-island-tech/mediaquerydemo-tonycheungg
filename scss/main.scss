@@ -87,7 +87,7 @@ body {
   }
 }
 .btn{
-  background-color: red;
+  background-color: color(primary);
   border: none;
   color: white;
   padding: 15px 32px;
@@ -96,4 +96,24 @@ body {
   display: inline-block;
   font-size: 16;
   cursor: pointer;
+}
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  background-color: color(grey);
+  margin: 0 auto;
+  height: 10rem;
+  width: auto;
+  font-size: 200%;
+}
+.item1{
+background-color: grey;
+}
+.item2{
+  background-color: grey;
+}
+.item3{
+  background-color: grey;
 }
