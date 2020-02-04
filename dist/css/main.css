@@ -16,7 +16,7 @@
 
 @media (min-width: 900px) {
   .user-gallery {
-    height: 90vh;
+    height: 100vh;
   }
 }
 
@@ -72,73 +72,23 @@
   }
 }
 
-.user-gallery-gallery .user-gallery-image {
+.user-gallery-image {
   width: auto;
-  padding: 1rem;
+  max-width: 100%;
+  height: auto;
+  padding: 0.5rem;
   cursor: pointer;
-}
-
-@media (min-width: 900px) {
-  .user-gallery-gallery .user-gallery-image {
-    height: 30rem;
-    width: auto;
-  }
-}
-
-.user-gallery-gallery .card {
-  -webkit-perspective: 150rem;
-          perspective: 150rem;
-  -moz-perspective: 150rem;
-  position: relative;
-}
-
-.user-gallery-gallery .card-side {
-  font-size: 15px;
-  color: white;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-}
-
-.user-gallery-gallery .card-side-front {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.user-gallery-gallery .card-side-back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  -webkit-transition: rotateY(-180deg);
-  transition: rotateY(-180deg);
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.one {
+  opacity: 0.6;
   border-radius: 1rem;
   -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 50px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.one:hover {
-  opacity: 1;
-}
-
-.card:hover .card-side-front {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
-.card:hover .card-side-back {
-  -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+@media (min-width: 900px) {
+  .user-gallery-image {
+    height: 30rem;
+    width: auto;
+  }
 }
 
 .zero {
@@ -152,20 +102,12 @@
   opacity: 1;
 }
 
-.two {
-  border-radius: 1rem;
-  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 50px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 50px 0 rgba(0, 0, 0, 0.19);
+.one:hover {
+  opacity: 1;
 }
 
 .two:hover {
   opacity: 1;
-}
-
-.three {
-  border-radius: 1rem;
-  -webkit-box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 50px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .three:hover {
