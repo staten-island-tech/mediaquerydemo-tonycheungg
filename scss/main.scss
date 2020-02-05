@@ -97,5 +97,17 @@ body {
   font-size: 16;
   cursor: pointer;
 }
-
+h2{
+font-size: 200%;
+}
+.container{
+  display: flex;
+  width: auto;
+  max-width: 100%;
+}
+.flex-child{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
